@@ -5,6 +5,7 @@
 ```
 .
 ├── Gemfile
+├── Gemfile.lock
 ├── input
 │   ├── input1.txt
 │   ├── input2.txt
@@ -15,12 +16,21 @@
 │   ├── record.rb
 │   └── tax_calculator.rb
 ├── README.md
-└── setup.rb
+├── setup.rb
+└── spec
+    ├── input
+    │   └── process_spec.rb
+    ├── product
+    │   ├── classifier_spec.rb
+    │   ├── record_spec.rb
+    │   └── tax_calculator_spec.rb
+    └── spec_helper.rb
 ```
 
 * `input` folder contains the input files and the `process.rb` file that processes the input
 * `product` folder contains the classes related to the product
 * `setup.rb` is the entry point of the application
+* `spec` folder contains the unit tests
 * `Gemfile` contains the dependencies
 * `README.md` contains the documentation
 
